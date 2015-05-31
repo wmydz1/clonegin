@@ -7,5 +7,11 @@ var default404Body = []byte("404 page not found")
 var default405Body = []byte("405 method not allowed")
 
 type(
-   HandlerFunc func(*Context)
+HandlerFunc func(*Context)
+HandlersChain  []HandlerFunc
+
+Engine struct {
+    
+}
+
 )
